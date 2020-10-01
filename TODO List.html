@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- saved from url=(0135)https://elearning.utdallas.edu/bbcswebdav/pid-3065764-dt-content-rid-80468931_1/courses/2202-merged-CS6314SEC001-CS6314SEC002/todo.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>TODO List </title> 
+
+<link rel="stylesheet" href="./TODO List_files/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="./TODO List_files/jquery-3.4.1.js.download" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+ <script>
+ 	$(document).ready(function(){
+
+ 		$("#add").click(function(){
+ 			$("ul").append("<li>" + $("#new").val() + "</li>");
+
+ 		});
+
+ 		// $("li").click(function(){
+ 		// 	$(this).toggleClass("done");
+
+
+ 		// });
+
+		$("ul").on("click", "li", function(){
+			$(this).toggleClass("done");
+
+ 		});
+
+
+ 	});
+
+ </script>
+
+<style>
+
+.done{
+	text-decoration: line-through;
+}
+
+</style>
+
+</head>
+
+<body data-gr-c-s-loaded="true">
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm"></div>
+    <div class="col-sm bg-light">
+      
+    <h3>Todo List</h3>
+    <input type="text" id="new">
+    <button id="add">Add</button>
+    <hr>
+    <ul>
+    	<li>Post Grades</li>
+    	<li>TA meeting</li>
+    </ul>
+      
+
+    </div>
+    <div class="col-sm"></div>
+  </div>
+</div>
+
+
+</body></html>
